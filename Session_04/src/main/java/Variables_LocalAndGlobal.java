@@ -4,4 +4,10 @@ public class Variables_LocalAndGlobal {
     public void method(){
         int localVariable = 5; //This variable save on stack memory.
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("This is finalize override!");
+        super.finalize();
+    }
 }
